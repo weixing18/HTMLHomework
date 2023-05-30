@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>留言</title>
+    <!-- 在这里添加样式表链接和其他元数据 -->
+</head>
+<body>
+    <h1>留言</h1>
+    <form method="POST" action="{{ url_for('messages') }}">
+        <!-- 添加留言表单字段和样式 -->
+        <input type="submit" value="提交留言">
+    </form>
+    <p>访问其他页面：</p>
+    <ul>
+        <li><a href="{{ url_for('home') }}">主页</a></li>
+        <li

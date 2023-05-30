@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>登录</title>
+    <!-- 在这里添加样式表链接和其他元数据 -->
+</head>
+<body>
+    <h1>登录</h1>
+    <form method="POST" action="{{ url_for('login') }}">
+        <!-- 添加登录表单字段和样式 -->
+        <input type="submit" value="登录">
+    </form>
+    <p>访问其他页面：</p>
+    <ul>
+        <li><a href="{{ url_for('home') }}">主页</a></li>
+        <li><a href="{{ url_for('messages') }}">留言</a></li>
+    </ul>
+</body>
+</html>
